@@ -1,0 +1,39 @@
+{
+  "NotFoundPage": {
+    "title": "Oops!",
+    "description":"404 - The Page can't be found",
+    "button": "Go To Homepage"
+  },
+  "HomePage": {
+    "title": "Hello world!",
+    "description": ""
+  },
+  "Navigation": {
+    "title": "Home"
+  },
+  "Header": {
+    "header-me-name": "Lorenzo",
+    "header-me-role": ", Frontend",
+    "present": "Present",
+    "skills": "Skills",
+    "contact": "Contact"
+  },
+  "CardHello": {
+    "card-hello-top-me-title": "Hi, I’m Lorenzo.",
+    "card-hello-top-me-role": "Frontend Developer",
+    "card-hello-title": "Passionate to pursue the technology.",
+    "card-hello-description": "I enjoy learning new things and try to overcome new challenges while analyzing how I improved through them."
+  },
+  "Skills": {
+    "card-skills-subtitle": "I constantly try to improve myself",
+    "card-skills-title": "Currently, I am learning TypeScript.",
+    "card-skills-description": "I am also learning TypeScript via my open source repos. Other than that, I also constantly practice web design."
+  },
+  "Contact": {
+    "card-contact-title": "Contact me",
+    "card-contact-description": "Make a contact via email or twitter DMs."
+  },
+  "Footer": {
+    "copyright": "© 2024 Lorenzo Muñoz. All rights reserved."
+  }
+}

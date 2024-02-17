@@ -1,0 +1,38 @@
+{
+  "NotFoundPage": {
+    "title": "Pagina no encotrada",
+    "description":"Oops! It seems like you've stubled upon a page that doesn't exist."
+  },
+  "HomePage": {
+    "title": "Hola!",
+    "description": ""
+  },
+  "Navigation": {
+    "title": "Inicio"
+  },
+  "Header": {
+    "header-me-name": "Lorenzo",
+    "header-me-role": ", Frontend",
+    "present": "Present",
+    "skills": "Skills",
+    "contact": "Contacto"
+  },
+  "Card-hello": {
+    "card-hello-top-me-title": "Hola, soy Lorenzo.",
+    "card-hello-top-me-role": "Frontend Developer",
+    "card-hello-title": "Apasionado por seguir la tecnología.",
+    "card-hello-description": "Disfruto aprendiendo cosas nuevas e intento superar nuevos desafíos mientras analizo cómo mejorar a través de ellos.."
+  },
+  "Skills": {
+    "card-skills-subtitle": "Intento mejorar constantemente",
+    "card-skills-title": "Actualmente estoy aprendiendo TypeScript.",
+    "card-skills-description": "También estoy aprendiendo TypeScript a través de mis repositorios de código abierto. Aparte de eso, también practico constantemente el diseño web."
+  },
+  "Contact": {
+    "card-contact-title": "Contáctame",
+    "card-contact-description": "Haga un contacto por correo electrónico o DM de Twitter."
+  },
+  "Footer": {
+    "copyright": "© 2024 Lorenzo Muñoz. All rights reserved."
+  }
+}
