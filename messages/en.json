@@ -24,6 +24,12 @@
     "card-hello-title": "Passionate to pursue the technology.",
     "card-hello-description": "I enjoy learning new things and try to overcome new challenges while analyzing how I improved through them."
   },
+  "Projects": {
+    "card-work-title-domain": "Domain",
+    "card-work-title-domain-name": "Name",
+    "card-work-soon": "In Progress",
+    "card-work-description": "Description"
+  },
   "Skills": {
     "card-skills-subtitle": "I constantly try to improve myself",
     "card-skills-title": "Currently, I am learning TypeScript.",
@@ -34,6 +40,6 @@
     "card-contact-description": "Make a contact via email or twitter DMs."
   },
   "Footer": {
-    "copyright": "© 2024 Lorenzo Muñoz. All rights reserved."
+    "copyright": "© 2024"
   }
 }
