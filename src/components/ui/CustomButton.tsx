@@ -7,7 +7,7 @@ interface CustomButtonProps {
 
 const CustomButton: React.FC<CustomButtonProps> = ({ children }) => {
   return (
-    <button className={styles['cybr-btn']} type="button">
+    <button className={styles['cybr-btn']} type='button'>
       {children}
     </button>
   )
