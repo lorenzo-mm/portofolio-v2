@@ -17,7 +17,7 @@
     "skills": "Skills",
     "contact": "Contatto"
   },
-  "Card-hello": {
+  "CardHello": {
     "card-hello-top-me-title": "Ciao, sono Lorenzo.",
     "card-hello-top-me-role": "Frontend Developer",
     "card-hello-title": "Appassionato di perseguire la tecnologia.",

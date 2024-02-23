@@ -17,11 +17,11 @@
     "skills": "Skills",
     "contact": "Contacto"
   },
-  "Card-hello": {
+  "CardHello": {
     "card-hello-top-me-title": "Hola, soy Lorenzo.",
     "card-hello-top-me-role": "Frontend Developer",
     "card-hello-title": "Apasionado por seguir la tecnología.",
-    "card-hello-description": "Disfruto aprendiendo cosas nuevas e intento superar nuevos desafíos mientras analizo cómo mejorar a través de ellos.."
+    "card-hello-description": "Disfruto aprendiendo cosas nuevas e intento superar nuevos desafíos mientras analizo cómo mejorar a través de ellos."
   },
   "Skills": {
     "card-skills-subtitle": "Intento mejorar constantemente",
