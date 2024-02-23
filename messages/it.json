@@ -23,6 +23,12 @@
     "card-hello-title": "Appassionato di perseguire la tecnologia.",
     "card-hello-description": "Mi piace imparare cose nuove e provare a superare nuove sfide analizzando come sono migliorato attraverso di esse."
   },
+  "Projects": {
+    "card-work-title-domain": "Dominio",
+    "card-work-title-domain-name": "Nome",
+    "card-work-soon": "In corso",
+    "card-work-description": "Descrizione"
+  },
   "Skills": {
     "card-skills-subtitle": "Cerco costantemente di migliorarmi",
     "card-skills-title": "Attualmente sto imparando TypeScript.",
