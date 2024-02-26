@@ -3,19 +3,19 @@
     "title": "Pagina non trovata",
     "description":"Oops! It seems like you've stubled upon a page that doesn't exist."
   },
-  "HomePage": {
-    "title": "Ciao!",
-    "description": ""
-  },
-  "Navigation": {
-    "title": "Home"
-  },
-  "Header": {
-    "header-me-name": "Lorenzo",
-    "header-me-role": ", Frontend",
-    "present": "Present",
-    "skills": "Skills",
-    "contact": "Contatto"
+  "navbar": {
+    "present": {
+      "title": "Present",
+      "route": "/"
+    },
+    "skills": {
+      "title": "Progetti",
+      "route": "#skills"
+    },
+    "contact": {
+      "title": "Contatto",
+      "route": "#contact"
+    }
   },
   "CardHello": {
     "card-hello-top-me-title": "Ciao, sono Lorenzo.",

@@ -3,19 +3,19 @@
     "title": "Pagina no encotrada",
     "description":"Oops! It seems like you've stubled upon a page that doesn't exist."
   },
-  "HomePage": {
-    "title": "Hola!",
-    "description": ""
-  },
-  "Navigation": {
-    "title": "Inicio"
-  },
-  "Header": {
-    "header-me-name": "Lorenzo",
-    "header-me-role": ", Frontend",
-    "present": "Present",
-    "skills": "Skills",
-    "contact": "Contacto"
+  "navbar": {
+    "present": {
+      "title": "Present",
+      "route": "/"
+    },
+    "skills": {
+      "title": "Proyectos",
+      "route": "#skills"
+    },
+    "contact": {
+      "title": "Contacto",
+      "route": "#contact"
+    }
   },
   "CardHello": {
     "card-hello-top-me-title": "Hola, soy Lorenzo.",

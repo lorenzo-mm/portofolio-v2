@@ -4,19 +4,19 @@
     "description":"404 - The Page can't be found",
     "button": "Go To Homepage"
   },
-  "HomePage": {
-    "title": "Hello world!",
-    "description": ""
-  },
-  "Navigation": {
-    "title": "Home"
-  },
-  "Header": {
-    "header-me-name": "Lorenzo",
-    "header-me-role": ", Frontend",
-    "present": "Present",
-    "skills": "Skills",
-    "contact": "Contact"
+  "navbar": {
+    "present": {
+      "title": "Present",
+      "route": "/"
+    },
+    "skills": {
+      "title": "Skills",
+      "route": "#skills"
+    },
+    "contact": {
+      "title": "Contact",
+      "route": "#contact"
+    }
   },
   "CardHello": {
     "card-hello-top-me-title": "Hi, I’m Lorenzo.",
