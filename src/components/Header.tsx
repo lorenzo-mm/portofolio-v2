@@ -19,8 +19,7 @@ export default function Header() {
           -translate-x-1/2 h-[4.5rem] 
           w-full my-16 text-xl
           rounded-none border shadow-md 
-          backdrop-blur-[20px]
-          backdrop-saturate-[180%]
+          backdrop-blur-sm bg-black/40
           sm:h-[3.25rem] sm:w-[77.5rem] 
           sm:rounded-full sm:top-3.5 
           

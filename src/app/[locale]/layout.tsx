@@ -1,6 +1,7 @@
+import './globals.css'
 import type { Metadata } from 'next'
 import { Archivo } from 'next/font/google'
-import './globals.css'
+
 import Navbar from '@/components/Header'
 import Footer from '@/components/Footer'
 
@@ -34,7 +35,7 @@ export default async function RootLayout({
 
   return (
     <html lang={locale}>
-      <body className={`${inter.className} relative `}>
+      <body className={`${inter.className}`}>
         <NextIntlClientProvider locale={locale} messages={messages}>
           <div className='flex flex-col min-h-screen max-w-[1240px] mx-auto'>
             <Navbar />
