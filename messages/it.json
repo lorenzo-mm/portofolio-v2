@@ -23,6 +23,19 @@
     "card-hello-title": "Appassionato di perseguire la tecnologia.",
     "card-hello-description": "Mi piace imparare cose nuove e provare a superare nuove sfide analizzando come sono migliorato attraverso di esse."
   },
+  "experience": {
+    "title": "Works",
+    "paragraph": "I am a passionate self-taught software developer seeking new challenges. I specialize in front-end and serverless backend development using TypeScript, React.js, and Node.js. Even when faced with challenging problems, I know how to address them with patience, determination, and unwavering perseverance.",
+
+    "seometric": {
+      "id": "1",
+      "achievements": "Metrics System: I designed and implemented a metrics system to provide users with valuable insights into the performance and outcomes of their actions.|Data Selection Tables: I developed interactive tables that allowed users to mass-select data, enhancing efficiency and usability.|AI Testing Playground: I established a playground where users could conduct tests on the artificial intelligence we developed, utilizing technologies such as OpenAI and gpt3-tokenizer.|Document Import: I designed and programmed buttons that facilitated the import of documents in PDF, JSON, and CSV formats, enhancing platform interoperability.|Login System: I implemented a secure and user-friendly login system to ensure user authentication.|Design Process: I led the design process from the prototyping stage in Figma to code implementation, ensuring a consistent and engaging user experience.|Technologies Used: To develop this platform, I utilized technologies such as Next.js, Supabase, Theme UI, Zustand, OpenAI, and gpt3-tokenizer."
+    },
+    "aini28": {
+      "id": "2",
+      "achievements": "Designed the model in Figma.|Developed the website using Next.js and Sanity.|Implemented size filters to enable users to quickly find plush toys based on their preferences.|Added an efficient search bar to facilitate the discovery of specific products.|Created an interactive shopping cart and a quotation function.|Showcased special offers to increase the platform's appeal."
+    }
+  },
   "Projects": {
     "card-work-title-domain": "Dominio",
     "card-work-title-domain-name": "Nome",
