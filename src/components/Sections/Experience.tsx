@@ -8,12 +8,12 @@ const Experience = () => {
   const t = useTranslations("experience");
   const newexperience = [
     {
-      id: t('seometric.id'),
-      achievements: t('seometric.achievements').split('|'),
+      id: t('Autonomous.id'),
+      achievements: t('Autonomous.achievements').split('|'),
     },
     {
-      id: t('aini28.id'),
-      achievements: t('aini28.achievements').split('|'),
+      id: t('SIA-srl.id'),
+      achievements: t('SIA-srl.achievements').split('|'),
     },
   ];
 

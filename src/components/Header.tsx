@@ -27,7 +27,7 @@ export default function Header() {
       >
         <div className='flex items-center justify-center ml-4'>
           <Link href='#' className='text-white'>Lorenzo</Link>
-          <h2>, Frontend</h2>
+          <h2 className='text-[rgba(255,255,255,0.35)]'>, Frontend</h2>
         </div>
         <Links />
         <div className='flex flex-row items-center justify-center gap-2 mr-4'>

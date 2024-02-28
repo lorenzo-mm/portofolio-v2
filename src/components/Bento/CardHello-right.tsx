@@ -6,7 +6,7 @@ import Hello from '@/../../public/hello.webp'
 const CardHelloRight = () => {
 
   return (
-    <div className='col-[9/13] rounded-[50px_30px]' id='d'>
+    <div className='col-[9/13] rounded-[50px_30px] bg-[#1B5E20]' id='d'>
       <div 
         className='h-full'
         id='e' 
@@ -15,9 +15,7 @@ const CardHelloRight = () => {
         <Image 
           src={Hello} 
           alt='Card hello right memoji' 
-          className='h-full object-contain object-[bottom_center] relative w-full z-[6]' 
-          height='1' 
-          width='1' 
+          className='h-96 object-contain object-[bottom_center] relative w-full z-[6]' 
         />
         <div className='card-hello-right-circles'>
           <div className='card-hello-right-circle' key='0'></div>

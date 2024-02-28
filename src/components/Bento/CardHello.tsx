@@ -1,3 +1,5 @@
+"use client"
+
 import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
@@ -14,13 +16,13 @@ export default function CardHello() {
   const t = useTranslations('CardHello')
 
   return (
-    <div className='rounded-tl-30 rounded-tr-50 rounded-br-30 rounded-bl-50'>
+    <div className='rounded-tl-30 rounded-tr-50 rounded-br-30 rounded-bl-50 py-[51px] px-[58px]'>
       <Image 
         src={CardHelloBg} 
         alt='Card hello background' 
         className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[63.125rem] h-[63.125rem] pointer-events-none animate-[rotatecardHelloBackground_100s_linear_infinite] z-[1]'
-        width='1' 
-        height='1' 
+        // width='1' 
+        // height='1' 
       />
       <div className='items-center flex justify-between relative z-[2] mb-[39px]'>
         <div className='flex items-center'>
@@ -28,8 +30,8 @@ export default function CardHello() {
             src={Memoji} 
             alt='Card hello memoji' 
             className='h-12 w-12 mr-6' 
-            width='1' 
-            height='1' 
+            // width='1' 
+            // height='1' 
           />
           <div className='card-hello-top-me-text'>
             <div className='text-xl mb-0.5'>{t('card-hello-top-me-title')}</div>

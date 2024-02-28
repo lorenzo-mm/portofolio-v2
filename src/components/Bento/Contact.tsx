@@ -41,8 +41,8 @@ const ContactCard = () => {
         </div>
       </div>
       <Image
-        height='1'
-        width='1'
+        // height='28'
+        // width='28'
         src={Hi}
         alt='Memoji'
         className='lazy-image card-contact-memoji lazy-image-loaded'
