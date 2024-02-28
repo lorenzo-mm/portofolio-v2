@@ -24,7 +24,6 @@
   outline: 0;
   box-sizing: border-box;
   text-decoration: none;
-  /* color: rgba(255, 255, 255, .35); */
 }
 
 body {
@@ -32,27 +31,33 @@ body {
 }
 
 :root {
-  /* background-color: rgba(31, 31, 56, 1); */
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, .5);
+  /* filter: blur(2px) saturate(150%); */
+  opacity: .8;
+  z-index: 3;
+  
   --transition: all 400ms ease;
 }
 
 .dark-mode {
   background-image:
-      radial-gradient(at 27% 37%, rgb(230, 58, 253) 0px, transparent 0%),
-      radial-gradient(at 97% 21%, rgb(214, 114, 254) 0px, transparent 30%),
-      radial-gradient(at 52% 99%, rgb(246, 58, 253) 0px, transparent 30%),
-      radial-gradient(at 10% 29%, hsla(256, 96%, 67%, 1) 0px, transparent 80%),
-      radial-gradient(at 97% 96%, rgb(228, 149, 198) 0px, transparent 30%),
-      radial-gradient(at 33% 50%, rgb(195, 140, 232) 0px, transparent 30%),
-      radial-gradient(at 79% 53%, rgb(217, 165, 238) 0px, transparent 30%);
-    /* position: absolute; */
-    /* content: ""; */
-    width: 100%;
-    height: 100%;
-    filter: blur(100px) saturate(150%);
-    top: 80px;
-    opacity: 0.15;
-    z-index: 3;
+    radial-gradient(at 27% 37%, rgb(230, 58, 253) 0px, transparent 0%),
+    radial-gradient(at 97% 21%, rgb(214, 114, 254) 0px, transparent 30%),
+    radial-gradient(at 52% 99%, rgb(246, 58, 253) 0px, transparent 30%),
+    radial-gradient(at 10% 29%, hsla(256, 96%, 67%, 1) 0px, transparent 80%),
+    radial-gradient(at 97% 96%, rgb(228, 149, 198) 0px, transparent 30%),
+    radial-gradient(at 33% 50%, rgb(195, 140, 232) 0px, transparent 30%),
+    radial-gradient(at 79% 53%, rgb(217, 165, 238) 0px, transparent 30%);
+  /* position: absolute; */
+  /* content: ""; */
+  width: 100%;
+  height: 100%;
+  filter: blur(2px);
+  top: 80px;
+  opacity: 0.15;
+  z-index: 3;
 }
 
 
@@ -64,20 +69,6 @@ body {
 .bg-gradient {
   @apply bg-gradient-to-br from-[#0D0D0E] via-[#1a0722] to-[#0D0D0E];
 }
-
-.bg-radial-gradient {
-  background-image: radial-gradient(circle closest-corner at 50% 0,
-      rgba(141, 14, 163, 0.631),
-      rgba(84, 61, 199, 0));
-}
-
-.bg-radial-gradient-farthest {
-  background-image: radial-gradient(circle farthest-side at 50% 110%,
-      #581763a1,
-      rgba(84, 61, 199, 0));
-}
-
-/* Otras reglas de estilo... */
 
 .bg-radial-gradient {
   background-image: radial-gradient(circle closest-corner at 50% 0,
