@@ -4,21 +4,21 @@ export const ExperiencesConstants: ExperiencesConstantsType = [
   {
     experience: {
       id: "1",
-      company: "Seometric.io",
+      company: "Autonomous",
       typeExperience: "Remote Work",
-      dateStart: "2023-03-20",
-      dateEnd: "2023-09-20",
+      dateStart: "2021-9-10",
+      dateEnd: "2024-12-31",
       experience: "Junior Frontend Developer",
     },
   },
   {
     experience: {
       id: "2",
-      company: "Aini28",
-      typeExperience: "Remote Work",
-      dateStart: "2022-12-10",
-      dateEnd: "2023-01-30",
-      experience: "Junior Frontend Developer",
+      company: "S.I.A srl",
+      typeExperience: "In Person Work",
+      dateStart: "2018-10-1",
+      dateEnd: "2019-04-1",
+      experience: "Practice",
     },
   },
 ]
