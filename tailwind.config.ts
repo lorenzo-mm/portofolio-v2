@@ -8,6 +8,15 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      keyframes: {
+        spin: {
+          '0%': { transform: 'translate(-50%, -50%) rotate(0)' }, /* Configuración inicial de la rotación */
+          '100%': { transform: 'translate(-50%, -50%) rotate(360deg)' }, /* Rotación completa de 360 grados */
+        }
+      },
+      animation: {
+        'spin-slow': 'spin 100s linear infinite', // Definir una animación llamada 'spin-slow' con una duración de 10 segundos
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
