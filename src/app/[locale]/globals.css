@@ -24,6 +24,7 @@
   outline: 0;
   box-sizing: border-box;
   text-decoration: none;
+  -webkit-font-smoothing: antialiased;
 }
 
 body {
