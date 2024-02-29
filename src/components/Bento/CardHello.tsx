@@ -16,11 +16,11 @@ export default function CardHello() {
   const t = useTranslations('CardHello')
 
   return (
-    <div className='rounded-tl-30 rounded-tr-50 rounded-br-30 rounded-bl-50 py-[51px] px-[58px]'>
+    <div className='col-[1/9] rounded-[30px_50px] py-[51px] px-[58px] bg-cover border-[2px] border-solid border-[rgb(0,248,0)]'>
       <Image 
         src={CardHelloBg} 
         alt='Card hello background' 
-        className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[63.125rem] h-[63.125rem] pointer-events-none animate-[rotatecardHelloBackground_100s_linear_infinite] z-[1]'
+        className='absolute h-[1010px] w-[1010px] top-1/2 left-1/2 pointer-events-none animate-spin-slow infinite z-[1]'
         // width='1' 
         // height='1' 
       />
@@ -29,7 +29,7 @@ export default function CardHello() {
           <Image 
             src={Memoji} 
             alt='Card hello memoji' 
-            className='h-12 w-12 mr-6' 
+            className='h-14 w-14 mr-6' 
             // width='1' 
             // height='1' 
           />
@@ -38,12 +38,12 @@ export default function CardHello() {
             <div className='text-sm opacity-[0.32]'>{t('card-hello-top-me-role')}</div>
           </div>
         </div>
-        <div className='flex items-center'>
+        <div className='flex items-center h-10 w-40'>
           <Link 
             href='https://twitter.com/lorendev_' 
             target='_blank' 
             aria-label='Follow me on Twitter'
-            className='flex items-center justify-center relative w-10 h-10 text-white rounded-md'
+            className='flex items-center justify-center relative mr-3 w-12 h-12 bg-black/20 text-white rounded-md'
           >
             <Image src={Twitter} alt='Logo X' width='25' height='20' />
           </Link>
@@ -51,7 +51,7 @@ export default function CardHello() {
             href='https://www.linkedin.com/in/lorenzo-mmuñoz/' 
             target='_blank' 
             aria-label='Connect with me on LinkedIn' 
-            className='flex items-center justify-center relative w-10 h-10 text-white rounded-md'
+            className='flex items-center justify-center relative mr-3 w-12 h-12 bg-black/20 text-white rounded-md'
           >
             <UseAnimations animation={Linkedin} strokeColor='#fff' />
           </Link>
@@ -59,14 +59,14 @@ export default function CardHello() {
             href='https://github.com/lorenzo-mm' 
             target='_blank' 
             aria-label='Follow me on Github' 
-            className='flex items-center justify-center relative w-10 h-10 text-white rounded-md'
+            className='flex items-center justify-center relative w-12 h-12 bg-black/20 text-white rounded-md'
           >
             <UseAnimations animation={Github} strokeColor='#fff' />
           </Link>
         </div>
       </div>
-      <div className='text-[56px] max-w-[600px] mb-[26px]'>{t('card-hello-title')}</div>
-      <div className='text-xl leading-[34px] max-w-[483px] opacity-60'>{t('card-hello-description')}</div>
+      <div className='text-[56px] mb-[26px] max-w-[600px]'>{t('card-hello-title')}</div>
+      <div className='text-[20px] leading-[34px] max-w-[483px] opacity-60'>{t('card-hello-description')}</div>
     </div>
   )
 }

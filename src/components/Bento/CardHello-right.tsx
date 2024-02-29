@@ -14,8 +14,8 @@ const CardHelloRight = () => {
       >
         <Image 
           src={Hello} 
+          className='h-80 object-contain object-[bottom_center] relative w-full z-[6]' 
           alt='Card hello right memoji' 
-          className='h-96 object-contain object-[bottom_center] relative w-full z-[6]' 
         />
         <div className='card-hello-right-circles'>
           <div className='card-hello-right-circle' key='0'></div>

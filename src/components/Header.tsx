@@ -18,10 +18,10 @@ export default function Header() {
           top-0 left-1/2 
           -translate-x-1/2 h-[4.5rem] 
           w-full my-16 text-xl
-          rounded-none border shadow-md 
+          rounded-[30px] border shadow-md 
           backdrop-blur-sm bg-black/40
           sm:h-[3.25rem] sm:w-[77.5rem] 
-          sm:rounded-full sm:top-3.5 
+          sm:rounded-full sm:top-3.5
           
         '
       >
