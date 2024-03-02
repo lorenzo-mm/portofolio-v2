@@ -16,13 +16,11 @@ export default function CardHello() {
   const t = useTranslations('CardHello')
 
   return (
-    <div className='col-[1/9] rounded-[30px_50px] py-[51px] px-[58px] bg-cover border-[2px] border-solid border-[rgb(0,248,0)]'>
+    <div className='bg-black bg-cover py-[51px] px-[58px] rounded-[30px_50px] col-[1/9] isolate overflow-hidden relative'>
       <Image 
         src={CardHelloBg} 
         alt='Card hello background' 
-        className='absolute h-[1010px] w-[1010px] top-1/2 left-1/2 pointer-events-none animate-spin-slow infinite z-[1]'
-        // width='1' 
-        // height='1' 
+        className='absolute h-[1010px] w-[1010px] max-w-none top-1/2 left-1/2 pointer-events-none animate-spin-slow z-[1]'
       />
       <div className='items-center flex justify-between relative z-[2] mb-[39px]'>
         <div className='flex items-center'>
@@ -30,8 +28,7 @@ export default function CardHello() {
             src={Memoji} 
             alt='Card hello memoji' 
             className='h-14 w-14 mr-6' 
-            // width='1' 
-            // height='1' 
+
           />
           <div className='card-hello-top-me-text'>
             <div className='text-xl mb-0.5'>{t('card-hello-top-me-title')}</div>
@@ -43,7 +40,7 @@ export default function CardHello() {
             href='https://twitter.com/lorendev_' 
             target='_blank' 
             aria-label='Follow me on Twitter'
-            className='flex items-center justify-center relative mr-3 w-12 h-12 bg-black/20 text-white rounded-md'
+            className='flex items-center justify-center relative mr-3 w-12 h-12 bg-black/20 text-white rounded-md border border-solid border-[rgba(255,255,255,0.1)]'
           >
             <Image src={Twitter} alt='Logo X' width='25' height='20' />
           </Link>
@@ -51,7 +48,7 @@ export default function CardHello() {
             href='https://www.linkedin.com/in/lorenzo-mmuñoz/' 
             target='_blank' 
             aria-label='Connect with me on LinkedIn' 
-            className='flex items-center justify-center relative mr-3 w-12 h-12 bg-black/20 text-white rounded-md'
+            className='flex items-center justify-center relative mr-3 w-12 h-12 bg-black/20 text-white rounded-md border border-solid border-[rgba(255,255,255,0.1)]'
           >
             <UseAnimations animation={Linkedin} strokeColor='#fff' />
           </Link>
@@ -59,7 +56,7 @@ export default function CardHello() {
             href='https://github.com/lorenzo-mm' 
             target='_blank' 
             aria-label='Follow me on Github' 
-            className='flex items-center justify-center relative w-12 h-12 bg-black/20 text-white rounded-md'
+            className='flex items-center justify-center relative w-12 h-12 bg-black/20 text-white rounded-md border border-solid border-[rgba(255,255,255,0.1)]'
           >
             <UseAnimations animation={Github} strokeColor='#fff' />
           </Link>

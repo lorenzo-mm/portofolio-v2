@@ -37,7 +37,7 @@ export default async function RootLayout({
     <html lang={locale}>
       <body className={`${inter.className}`}>
         <NextIntlClientProvider locale={locale} messages={messages}>
-          <div className='flex flex-col min-h-screen max-w-[1240px] mx-auto'>
+          <div className='max-w-[1240px] my-0 mx-auto px-3'>
             <Navbar />
             <div className='flex-grow mt-20'>{children}</div>
             <Footer />
