@@ -18,12 +18,8 @@
 }
 
 * {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  outline: 0;
+  position: relative;
   box-sizing: border-box;
-  text-decoration: none;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -32,12 +28,10 @@ body {
 }
 
 :root {
-  width: 100%;
-  height: 100%;
-  background-color: rgba(255, 255, 255, .5);
-  /* filter: blur(2px) saturate(150%); */
+  background-color: rgba(0 ,0 ,0 , .3);
   opacity: .8;
-  z-index: 3;
+  /* z-index: 3; */
+  /* filter: blur(2px) saturate(150%); */
   
   --transition: all 400ms ease;
 }
@@ -53,12 +47,9 @@ body {
     radial-gradient(at 79% 53%, rgb(217, 165, 238) 0px, transparent 30%);
   /* position: absolute; */
   /* content: ""; */
-  width: 100%;
-  height: 100%;
-  filter: blur(2px);
-  top: 80px;
+  /* filter: blur(2px); */
   opacity: 0.15;
-  z-index: 3;
+  /* z-index: 3; */
 }
 
 
@@ -67,20 +58,8 @@ body {
   @apply bg-gradient-to-r from-[#4CAF50] via-[#689F38] to-[#1B5E20] bg-clip-text text-transparent;
 }
 
-.bg-gradient {
+.bg-gradients {
   @apply bg-gradient-to-br from-[#0D0D0E] via-[#1a0722] to-[#0D0D0E];
-}
-
-.bg-radial-gradient {
-  background-image: radial-gradient(circle closest-corner at 50% 0,
-      rgba(141, 14, 163, 0.631),
-      rgba(84, 61, 199, 0));
-}
-
-.bg-radial-gradient-farthest {
-  background-image: radial-gradient(circle farthest-side at 50% 110%,
-      #581763a1,
-      rgba(84, 61, 199, 0));
 }
 
 /* ⬇ STYLES CARD HELLO RIGHT ⬇ */
@@ -133,3 +112,55 @@ body {
   opacity: 0.75;
 }
 /* ⬆ END STYLES CARD HELLO RIGHT ⬆ */
+
+
+/* ⬇ STYLES CARD SKILLS TREE ROW ⬇  */
+.card-skills-bg {
+  height: 100%;
+  left: 0;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.card-skills-tree {
+  height: 386px;
+  -webkit-mask-image: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #fff 17.39%, #fff 85.24%, rgba(255, 255, 255, 0) 100%);
+  mask-image: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #fff 17.39%, #fff 85.24%, rgba(255, 255, 255, 0) 100%);
+  overflow: hidden;
+  position: absolute;
+  right: -100px;
+  width: 752px;
+}
+
+.card-skills-tree-row:nth-child(1) {
+  transition-duration: 3s;
+  top: calc(25px * 1);
+}
+.card-skills-tree-row:nth-child(2) {
+  transition-duration: 2s;
+  top: calc(-286 * 1);
+}
+
+.card-skills-tree-row:nth-child(3) {
+  transition-duration: 1s;
+  top: calc(596px + 25px)* -1* 1;
+}
+
+.card-skills-tree-row:nth-child(4) {
+  transition-duration: 2s;
+  top: calc(-1017px* 1);
+}
+
+.card-skills-tree-row:nth-child(5) {
+  transition-duration: 3s;
+  top: calc(-1439px * 1);
+}
+
+.lazy-image {
+  display: block;
+  transition: 1s cubic-bezier(.6, .6, 0, 1) opacity;
+}
+
+/* ⬆ END STYLES CARD SKILLS TREE ROW ⬆   */
