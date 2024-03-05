@@ -8,8 +8,8 @@ import skills_tree from '../../../public/card-skills-tree-row.png'
 const SkillsCard = () => {
   const t = useTranslations('Skills')
   return (
-    <div id='skills' className='flex items-center p-[55px] rounded-[50px_30px_30px_50px] col-[1/11] isolate overflow-hidden relative'>
-      <div className='max-w-[260px]'>
+    <div id='skills' className='flex items-center p-[55px] rounded-[50px_30px_30px_50px] col-[1/12] isolate overflow-hidden relative card-skills'>
+      <div className='max-w-[280px]'>
         <div className='mb-3.5'>{t('card-skills-subtitle')}</div>
         <div className='text-[32px] mb-[26px]'>{t('card-skills-title')}</div>
         <div className='text-xl leading-7 opacity-50'>{t('card-skills-description')}</div>

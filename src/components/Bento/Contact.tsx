@@ -11,7 +11,7 @@ const ContactCard = () => {
   const t = useTranslations('Contact')
   
   return (
-    <div id='contact' className='bg-gradient p-[38px] rounded-[30px_50px_50px_30px] col-[11/13] isolate overflow-hidden relative'>
+    <div id='contact' className='bg-gradient p-[38px] rounded-[30px_50px_50px_30px] col-[12/13] isolate overflow-hidden relative'>
       <div>
         <div className='text-[28px] mb-2'>{t('card-contact-title')}</div>
         <div 
@@ -43,7 +43,7 @@ const ContactCard = () => {
       <Image
         src={Pc}
         alt='Memoji'
-        className='block bottom-[-10px] h-[360px] left-12 pointer-events-none absolute origin-[center_bottom] w-[360px] animate-floating-animation lazy-image'
+        className='block bottom-[-20px] h-[300px] left-[55px] pointer-events-none absolute origin-[center_bottom] w-[300px] animate-floating-animation lazy-image'
       />
     </div>
   )

@@ -16,7 +16,7 @@ export default function CardHello() {
   const t = useTranslations('CardHello')
 
   return (
-    <div className='bg-black bg-cover py-[51px] px-[58px] rounded-[30px_50px] col-[1/9] isolate overflow-hidden relative'>
+    <div className='bg-black bg-cover py-[51px] px-[58px] rounded-[30px_50px] col-[1/9] isolate overflow-hidden relative card-skills'>
       <Image 
         src={CardHelloBg} 
         alt='Card hello background' 

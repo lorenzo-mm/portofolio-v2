@@ -3,11 +3,13 @@ import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 
+// import Portfolio from '@/Links/portfolio'
+
 const CardsWorks = () => {
   const t = useTranslations('Projects')
 
   return (
-    <div className='grid gap-5 col-[span_12] grid-cols-[repeat(2,1fr)]'>
+    <div className='grid gap-5 col-[span_12] grid-cols-[repeat(2,1fr)] relative'>
       <div className='card-work swiper-slide card-work-dark'>
         <div className='absolute z-[2] left-[55px] bottom-[55px]'>
           <div className='items-center flex mb-3.5'>

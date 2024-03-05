@@ -6,7 +6,7 @@ const Links = () => {
   const t = useTranslations("navbar")
 
   return (
-    <nav className='xl:block sm:hidden text-[rgba(255,255,255,0.35)]'>
+    <nav className='xl:block sm:hidden text-[rgba(255,255,255,0.40)]'>
       <ul className='flex gap-5 h-12'>
         {sidebarLinks.map(({ title, route }) => (
           <li key={title} className='flex items-center h-full hover:bg-gradient-to-t from-blue-100'>
