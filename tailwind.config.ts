@@ -14,13 +14,18 @@ const config: Config = {
           '100%': { transform: 'translate(-50%, -50%) rotate(360deg)' } /* Rotación completa de 360 grados */
         },
         floatingAnimation: {
-          '0%, 100%': { transform: 'translate(0) scale(1)' },
-          '50%': { transform: 'translateY(5px) scale(.99)' }
-        }
+          '0%, 100%': { transform: 'translate(0) scale(1)' }, /* Configuración inicial memojiPC flotando */
+          '50%': { transform: 'translateY(5px) scale(.99)' } /* Configuración final memojiPC flotando */
+        },
+      circleAnimation: {
+        '0%, 30%, 100%': { transform: 'translate(-50%, 50%) scale(1)'}, /* Configuración inicial circulos blancos */
+        '15%': { transform: 'translate(-50%, 50%) scale(.95)'} /* Configuración final circulos blancos */
+      }  
       },
       animation: {
         'spin-slow': 'spin 100s linear infinite',
-        'floating-animation': 'floatingAnimation 8s ease infinite'
+        'floating-animation': 'floatingAnimation 8s ease infinite',
+        'circle-animation': 'circleAnimation 6s infinite'
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
@@ -31,7 +36,7 @@ const config: Config = {
         'gradient-mask': 'linear-gradient(180deg,rgba(255, 255, 255, 0) 0%, #fff 17.39%, #fff 85.24%,rgba(255, 255, 255, 0) 100%)'
       },
       transitionDuration: {
-        '450': '450ms',
+        '450': '450ms', /* Configuración memoji principal */
       },
     }
   },

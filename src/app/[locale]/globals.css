@@ -25,11 +25,11 @@
 
 body {
   color: #fff;
+  line-height: 1.15;
 }
 
 :root {
   background-color: rgba(0 ,0 ,0 , .3);
-  opacity: .8;
   /* z-index: 3; */
   /* filter: blur(2px) saturate(150%); */
   
@@ -63,8 +63,20 @@ body {
 }
 
 /* ⬇ STYLES CARD HELLO RIGHT ⬇ */
+@keyframes custom-animation {
+  0%,
+  30%,
+  100% {
+    transform: translate(-50%, 50%) scale(1);
+  }
+
+  15% {
+    transform: translate(-50%, 50%) scale(.95);
+  }
+}
+
 .card-hello-right-circle {
-  animation: 6s ease infinite;
+  animation: custom-animation 6s ease infinite;
   background: #fff;
   border-radius: 50%;
   bottom: 0;
@@ -85,7 +97,7 @@ body {
   height: 480px;
   width: 480px;
   z-index: 3;
-  opacity: .3;
+  opacity: 0.3;
 }
 
 .card-hello-right-circle:nth-child(3) {
@@ -93,7 +105,7 @@ body {
   height: 560px;
   width: 560px;
   z-index: 2;
-  opacity: .225;
+  opacity: 0.225;
 }
 
 .card-hello-right-circle:nth-child(4) {
@@ -101,7 +113,7 @@ body {
   height: 640px;
   width: 640px;
   z-index: 1;
-  opacity: .15;
+  opacity: 0.15;
 }
 
 .card-hello-right-circle:nth-child(5) {
@@ -163,4 +175,21 @@ body {
   transition: 1s cubic-bezier(.6, .6, 0, 1) opacity;
 }
 
-/* ⬆ END STYLES CARD SKILLS TREE ROW ⬆   */
+/* ⬆ END STYLES CARD SKILLS TREE ROW ⬆ */
+
+/* ⬇ STYLES CARDHELLO & CONTACT ⬇ */
+.card-skills:before {
+  background: linear-gradient(18.48deg, rgba(255, 255, 255, .15) 2.76%, rgba(255, 255, 255, .05) 17.23%), linear-gradient(200.6deg, rgba(255, 255, 255, .15) 4.13%, rgba(255, 255, 255, .05) 20.54%);
+  border-radius: inherit;
+  content: "";
+  inset: 0;
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: xor;
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  padding: 1px;
+  pointer-events: none;
+  position: absolute;
+}
+/* ⬆ END STYLES CARDHELLO & CONTACT ⬆ */
