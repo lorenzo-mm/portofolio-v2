@@ -45,13 +45,13 @@
   "Skills": {
     "card-skills-subtitle": "Cerco costantemente di migliorarmi",
     "card-skills-title": "Attualmente sto imparando TypeScript.",
-    "card-skills-description": "Sto anche imparando TypeScript tramite i miei repository open source. Oltre a questo, pratico costantemente anche il web design."
+    "card-skills-description": "Sto anche imparando TailwindCSS tramite i miei repository open source. Oltre a questo, pratico costantemente anche il web design."
   },
   "Contact": {
     "card-contact-title": "Contattami",
     "card-contact-description": "Stabilisci un contatto via e-mail o DM su Twitter."
   },
   "Footer": {
-    "copyright": "© 2024"
+    "copyright": "© 2024 - Lorenzo Migliorati Muñoz"
   }
 }

@@ -46,13 +46,13 @@
   "Skills": {
     "card-skills-subtitle": "I constantly try to improve myself",
     "card-skills-title": "Currently, I am learning TypeScript.",
-    "card-skills-description": "I am also learning TypeScript via my open source repos. Other than that, I also constantly practice web design."
+    "card-skills-description": "I am also learning TailwindCSS via my open source repos. Other than that, I also constantly practice web design."
   },
   "Contact": {
     "card-contact-title": "Contact me",
     "card-contact-description": "Make a contact via email or twitter DMs."
   },
   "Footer": {
-    "copyright": "© 2024"
+    "copyright": "© 2024 - Lorenzo Muñoz"
   }
 }
