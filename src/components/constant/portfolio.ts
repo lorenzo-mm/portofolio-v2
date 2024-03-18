@@ -1,86 +1,84 @@
 'use client'
 
-import Apple from '@/../../public/apple1.png'
-import Burger from '@/../../public/burger1.png'
-import Calculadora from '@/../../public/calculadora.png'
-import Spacex from '@/../../public/spacex.png'
-import Admin from '@/../../public/admin.png'
-import Mapfre from '@/../../public/mapfre.png'
-import Pptss from '@/../../public/pptss.png'
-import Todolist from '@/../../public/todolist.png'
-import AgeCalculator from '@/../../public/agecalculator.png'
+import { StaticImageData } from 'next/image';
 
-export const data = [
+import en from '../../../messages/en.json'
+import es from '../../../messages/es.json'
+import it from '../../../messages/it.json'
+
+import Burger from '@/../../public/burger1.png'
+import Admin from '@/../../public/admin1.png'
+import Mapfre from '@/../../public/mapfre.png'
+import AgeCalculator from '@/../../public/agecalculator.png'
+import Apple from '@/../../public/apple1.png'
+import Spacex from '@/../../public/spacex.png'
+import Calculadora from '@/../../public/calculadora.png'
+import Todolist from '@/../../public/todolist.png'
+import Pptss from '@/../../public/pptss.png'
+
+
+type Description = {
+  es: string;
+  en: string;
+  it: string;
+};
+
+export interface PortfolioItem {
+  id: number;
+  image: StaticImageData;
+  title: string;
+  github: string;
+  description: Description;
+}
+
+
+export const Data: PortfolioItem[] = [
   {
     id: 1,
-    image: Apple,
-    title: Apple,
-    // subtitle: t('portfolio.descripcion_apple'),
-      github: 'https://github.com/lorenzo-mm/Clon-Apple-2021',
-      demo: 'https://lorenzo-mm.github.io/apple-page-clon/Html/'
+    image: Mapfre,
+    title: 'Private login Mapfre',
+    description: {
+      en: en.projects['1'].description, 
+      es: es.projects['1'].description, 
+      it: it.projects['1'].description,
     },
-    {
-      id: 2,
-      image: Burger,
-      // title: t('portfolio.burger'),
-      // subtitle: t('portfolio.descripcion_burger'),
-      github: 'https://github.com/lorenzo-mm/Burger-Website',
-      demo: 'https://lorenzo-mm.github.io/Burger-Website/'
+    github: 'https://github.com/lorenzo-mm/portal-mapfre',
+    // demo: 'https://github.com/lorenzo-mm/TechNews.'
+  },
+  {
+    id: 2,
+    image: Admin,
+    title: 'Dashboard Administator',
+    description: {
+      en: en.projects['2'].description, 
+      es: es.projects['2'].description, 
+      it: it.projects['2'].description,
     },
-    {
-      id: 3,
-      image: Calculadora,
-      // title: t('portfolio.calculadora'),
-      // subtitle: t('portfolio.descripcion_calculadora'),
-      github: 'https://github.com/lorenzo-mm/Calculator',
-      demo: 'https://lorenzo-mm.github.io/Calculator/'
+    github: 'https://github.com/lorenzo-mm/Dashboard-Admin-with-React',
+    // demo: 'https://lorenzo-mm.github.io/Dashboard-Admin-with-React/'
+  },
+  {
+    id: 3,
+    image: Burger,
+    title: 'Burger Website',
+    description: {
+      en: en.projects['3'].description, 
+      es: es.projects['3'].description, 
+      it: it.projects['3'].description,
     },
-    {
-      id: 4,
-      image: Spacex,
-      // title: t('portfolio.spacex'),
-      // subtitle: t('portfolio.descripcion_spacex'),
-      github: 'https://github.com/lorenzo-mm/Space-X-API-with-React',
-      demo: 'https://lorenzo-mm.github.io/Space-X-API-with-React/'
+    github: 'https://github.com/lorenzo-mm/Burger-Website',
+    // demo: 'https://lorenzo-mm.github.io/Burger-Website/'
+  },
+  {
+    id: 4,
+    image: AgeCalculator,
+    title: 'Age Calculator',
+    description: {
+      en: en.projects['4'].description, 
+      es: es.projects['4'].description, 
+      it: it.projects['4'].description,
     },
-    {
-      id: 5,
-      image: Admin,
-      // title: t('portfolio.admin'),
-      // subtitle: t('portfolio.descripcion_admin'),
-      github: 'https://github.com/lorenzo-mm/Dashboard-Admin-with-React',
-      demo: 'https://lorenzo-mm.github.io/Dashboard-Admin-with-React/'
-    },
-    {
-      id: 6,
-      image: Mapfre,
-      // title: t('portfolio.mapfre'),
-      // subtitle: t('portfolio.descripcion_mapfre'),
-      github: 'https://github.com/lorenzo-mm/portal-mapfre',
-      demo: 'https://github.com/lorenzo-mm/TechNews.'
-    },
-    {
-      id: 7,
-      image: Pptss,
-      // title: t('portfolio.pptss'),
-      // subtitle: t('portfolio.descripcion_pptss'),
-      github: 'https://github.com/lorenzo-mm/react-rpsls-main',
-      demo: 'https://lorenzo-mm.github.io/react-rpsls-main/'
-    },
-    {
-      id: 8,
-      image: Todolist,
-      // title: t('portfolio.todo_list'),
-      // subtitle: t('portfolio.descripcion_todo_list'),
-      github: 'https://github.com/lorenzo-mm/Todo-List',
-      demo: 'https://lorenzo-mm.github.io/todo-list/'
-    },
-    {
-      id: 9,
-      image: AgeCalculator,
-      // title: t('portfolio.age_calc'),
-      // subtitle: t('portfolio.descripcion_age_calc'),
-      github: 'https://github.com/lorenzo-mm',
-      demo: 'https://lorenzo-mm.github.io/age-calculator-main/'
-    }
+    github: 'https://github.com/lorenzo-mm/age-calculator-main',
+    // demo: 'https://lorenzo-mm.github.io/age-calculator-main/'
+  }
 ]

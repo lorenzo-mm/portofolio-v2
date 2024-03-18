@@ -15,13 +15,14 @@ export default function Header() {
         className='
           flex justify-between 
           items-center fixed 
-          top-0 left-1/2 
+          top-0 left-1/2
           -translate-x-1/2 h-[4.5rem] 
           w-full my-16 text-xl
-          rounded-[30px] border shadow-md 
+          rounded-[30px] shadow-md 
           backdrop-blur-sm bg-black/40
           sm:h-[3.25rem] sm:w-[77.5rem] 
           sm:rounded-full sm:top-3.5
+          card-skills
         '
       >
         <div className='flex items-center justify-center ml-4'>

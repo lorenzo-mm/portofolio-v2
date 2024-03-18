@@ -18,7 +18,7 @@ export const ExperiencesConstants: ExperiencesConstantsType = [
       typeExperience: "In Person Work",
       dateStart: "2018-10-1",
       dateEnd: "2019-04-1",
-      experience: "Practice",
+      experience: "Practice - S.I.A-srl",
     },
   },
 ]

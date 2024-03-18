@@ -31,7 +31,7 @@ const Experience = () => {
   })
 
   return (
-    <section id='experiences' className='flex flex-col mt-28 rounded-xl gap-5'>
+    <section id='experiences' className='flex flex-col mt-28 rounded-xl gap-5 mb-12 pb-8'>
       <header className='flex flex-col gap-3'>
         <h2 className='text-2xl font-semibold'>{t('title')}</h2>
         <p className='font-light text-gray-400'>{t('paragraph')}</p>
@@ -72,7 +72,7 @@ const Experience = () => {
 
                 <ul className='list-outside list-disc pl-4 text-gray-500'>
                   {experience.achievements?.map((entry) => (
-                    <li key={entry} className='font-light text-gray-400 pl-3'>
+                    <li key={entry} className='font-light text-gray-400 pl-3 leading-[21px]'>
                       {entry}
                     </li>
                   ))}
