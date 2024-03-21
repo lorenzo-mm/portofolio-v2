@@ -5,7 +5,7 @@
   },
   "navbar": {
     "present": {
-      "title": "Present",
+      "title": "Inizio",
       "route": "/"
     },
     "skills": {
@@ -24,23 +24,31 @@
     "card-hello-description": "Mi piace imparare cose nuove e provare a superare nuove sfide analizzando come sono migliorato attraverso di esse."
   },
   "experience": {
-    "Autonomous": "Works",
-    "paragraph": "I am a passionate self-taught software developer seeking new challenges. I specialize in front-end and serverless backend development using TypeScript, React.js, and Node.js. Even when faced with challenging problems, I know how to address them with patience, determination, and unwavering perseverance.",
+    "title": "Esperienza",
+    "paragraph": "Sono un appassionato sviluppatore di software autodidatta alla ricerca di nuove sfide. Sono specializzato nello sviluppo front-end e backend serverless utilizzando TypeScript, React.js e Node.js. Anche di fronte a problemi impegnativi, so come affrontarli con pazienza, determinazione e incrollabile perseveranza.",
 
-    "seometric": {
+    "Autonomous": {
       "id": "1",
-      "achievements": "Metrics System: I designed and implemented a metrics system to provide users with valuable insights into the performance and outcomes of their actions.|Data Selection Tables: I developed interactive tables that allowed users to mass-select data, enhancing efficiency and usability.|AI Testing Playground: I established a playground where users could conduct tests on the artificial intelligence we developed, utilizing technologies such as OpenAI and gpt3-tokenizer.|Document Import: I designed and programmed buttons that facilitated the import of documents in PDF, JSON, and CSV formats, enhancing platform interoperability.|Login System: I implemented a secure and user-friendly login system to ensure user authentication.|Design Process: I led the design process from the prototyping stage in Figma to code implementation, ensuring a consistent and engaging user experience.|Technologies Used: To develop this platform, I utilized technologies such as Next.js, Supabase, Theme UI, Zustand, OpenAI, and gpt3-tokenizer."
+      "achievements": "Portale con Autenticazione: Ho sviluppato un portale con opzioni di autenticazione tramite email o Google per garantire la sicurezza degli utenti. | Dashboard delle Attività: Ho creato un cruscotto intuitivo che consente agli utenti di gestire efficacemente le loro attività, con grafici visivi che forniscono una chiara visione del progresso. | Progetti ReactJS: Ho partecipato a diversi progetti che coinvolgevano ReactJS, Tailwind, Node.js, MongoDB e altre tecnologie, contribuendo allo sviluppo di soluzioni innovative e scalabili. | Aggiunta da parte mia: Inoltre, mi sono concentrato sull'ottimizzazione delle prestazioni e dell'usabilità in ogni progetto, cercando sempre di offrire un'esperienza utente di alta qualità. | Sistema di Login: Ho implementato un sistema di login sicuro e user-friendly per garantire l'autenticazione degli utenti. | Processo di Design: Ho guidato il processo di design dalla fase di prototipazione in Figma all'implementazione del codice, garantendo un'esperienza utente coerente e coinvolgente. | Tecnologie Utilizzate: Per sviluppare questa piattaforma, ho utilizzato tecnologie come Next.js, TailwindCSS, TypeScript, ReactUI, daisyUI."
     },
     "SIA-srl": {
       "id": "2",
-      "achievements": "Designed the model in Figma.|Developed the website using Next.js and Sanity.|Implemented size filters to enable users to quickly find plush toys based on their preferences.|Added an efficient search bar to facilitate the discovery of specific products.|Created an interactive shopping cart and a quotation function.|Showcased special offers to increase the platform's appeal."
+      "achievements": "Gestione dispositivi | Installazione e riparazione di dispositivi Apple | Spedizioni e gestione magazino | Risoluzione dei problemi."
     }
   },
-  "Projects": {
-    "card-work-title-domain": "Dominio",
-    "card-work-title-domain-name": "Nome",
-    "card-work-soon": "In corso",
-    "card-work-description": "Descrizione"
+  "projects": {
+    "1": {
+      "description": "Ho implementato un sistema di login sicuro e user-friendly per garantire l'autenticazione degli utenti."
+    },
+    "2": {
+      "description": "Ho guidato il processo di design dalla fase di prototipazione in Figma all'implementazione del codice, garantendo un'esperienza utente coerente e coinvolgente."
+    },
+    "3": {
+      "description": "Ho sviluppato un pannello di controllo intuitivo per la gestione delle attività, con grafici visivi per un migliore monitoraggio del progresso."
+    },
+    "4": {
+      "description": "Ho partecipato a diversi progetti utilizzando ReactJS, Tailwind, Node.js, MongoDB e altre tecnologie, contribuendo allo sviluppo di soluzioni innovative e scalabili."
+    }
   },
   "Skills": {
     "card-skills-subtitle": "Cerco costantemente di migliorarmi",

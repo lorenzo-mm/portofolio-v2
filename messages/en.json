@@ -30,18 +30,26 @@
 
     "Autonomous": {
       "id": "1",
-      "achievements": "Metrics System: I designed and implemented a metrics system to provide users with valuable insights into the performance and outcomes of their actions.|Data Selection Tables: I developed interactive tables that allowed users to mass-select data, enhancing efficiency and usability.|AI Testing Playground: I established a playground where users could conduct tests on the artificial intelligence we developed, utilizing technologies such as OpenAI and gpt3-tokenizer.|Document Import: I designed and programmed buttons that facilitated the import of documents in PDF, JSON, and CSV formats, enhancing platform interoperability.|Login System: I implemented a secure and user-friendly login system to ensure user authentication.|Design Process: I led the design process from the prototyping stage in Figma to code implementation, ensuring a consistent and engaging user experience.|Technologies Used: To develop this platform, I utilized technologies such as Next.js, Supabase, Theme UI, Zustand, OpenAI, and gpt3-tokenizer."
+      "achievements": "Portal with Authentication: I developed a portal with authentication options via email or Google to ensure user security. | Task Dashboard: I created an intuitive dashboard allowing users to efficiently manage their tasks, with visual graphics providing a clear view of progress. | ReactJS Projects: I participated in several projects involving ReactJS, Tailwind, Node.js, MongoDB, and other technologies, contributing to the development of innovative and scalable solutions. |Added by me: Additionally, I focused on optimizing performance and usability in each project, always aiming to deliver a high-quality user experience. | Login System: I implemented a secure and user-friendly login system to ensure user authentication. | Design Process: I led the design process from the prototyping stage in Figma to code implementation, ensuring a consistent and engaging user experience. | Technologies Used: To develop this platform, I utilized technologies such as Next.js, TailwindCSS, TypeScript, ReactUI, daisyUI."
     },
     "SIA-srl": {
       "id": "2",
-      "achievements": "Designed the model in Figma.|Developed the website using Next.js and Sanity.|Implemented size filters to enable users to quickly find plush toys based on their preferences.|Added an efficient search bar to facilitate the discovery of specific products.|Created an interactive shopping cart and a quotation function.|Showcased special offers to increase the platform's appeal."
+      "achievements": "Device Management | Installation and repair of Apple devices | Package shipments and storage management | Problem solving"
     }
   },
-  "Projects": {
-    "card-work-title-domain": "Domain",
-    "card-work-title-domain-name": "Name",
-    "card-work-soon": "In Progress",
-    "card-work-description": "Description"
+  "projects": {
+    "1": {
+      "description": "Implemented a secure and user-friendly login system to ensure user authentication."
+    },
+    "2": {
+      "description": "Led the design process from the prototyping stage in Figma to code implementation, ensuring a consistent and engaging user experience."
+    },
+    "3": {
+      "description": "Developed a user-friendly dashboard for task management, featuring visual charts for better progress tracking."
+    },
+    "4": {
+      "description": "Participated in various projects using ReactJS, Tailwind, Node.js, MongoDB, and other technologies, contributing to the development of innovative and scalable solutions."
+    }
   },
   "Skills": {
     "card-skills-subtitle": "I constantly try to improve myself",
