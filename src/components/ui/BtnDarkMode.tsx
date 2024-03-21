@@ -30,7 +30,7 @@ export default function BtnDarkMode () {
 
   const handleToggleTheme = () => {
     setIsDarkMode(!isDarkMode)
-    document.body.classList.toggle('dark-mode')
+    document.body.classList.toggle('prefers-color-scheme:dark')
   }
 
   return (

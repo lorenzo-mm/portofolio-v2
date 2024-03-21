@@ -34,10 +34,10 @@ export default async function RootLayout({
   }
 
   return (
-    <html lang={locale}>
+    <html lang={locale} className='bg-bkg'>
       <body className={`${inter.className}`}>
         <NextIntlClientProvider locale={locale} messages={messages}>
-          <div className='max-w-[1240px] my-0 mx-auto px-3'>
+          <div className='max-w-[1240px] my-0 mx-auto px-3 '>
             <Navbar />
             <div className='flex-grow mt-20'>{children}</div>
             <Footer />
