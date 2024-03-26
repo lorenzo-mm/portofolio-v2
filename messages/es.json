@@ -38,16 +38,16 @@
   },
   "projects": {
     "1": {
-      "description": "Implementé un sistema de inicio de sesión seguro y fácil de usar para garantizar la autenticación de los usuarios."
+      "description": "Implementé un sistema de inicio de sesión seguro y fácil de usar."
     },
     "2": {
-      "description": "Lideré el proceso de diseño desde la etapa de prototipado en Figma hasta la implementación del código, asegurando una experiencia de usuario coherente y atractiva."
+      "description": "Panel de administrador intuitivo para usuarios."
     },
     "3": {
-      "description": "Desarrollé un panel de control fácil de usar para la gestión de tareas, con gráficos visuales para un mejor seguimiento del progreso."
+      "description": "Las mejores hamburguesas."
     },
     "4": {
-      "description": "Participé en varios proyectos utilizando ReactJS, Tailwind, Node.js, MongoDB y otras tecnologías, contribuyendo al desarrollo de soluciones innovadoras y escalables."
+      "description": "Calcula tu edad."
     }
   },
   "Skills": {
