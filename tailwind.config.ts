@@ -1,6 +1,7 @@
 import type { Config } from 'tailwindcss'
 
 const config: Config = {
+  darkMode:"class",
   content: [
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
@@ -9,16 +10,7 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        accent: {
-          1: 'hsl(var(--color-accent1) / <alpha-value>)',
-          2: 'hsl(var(--color-accent2) / <alpha-value>)'
-        },
-        text: {
-          1: 'rgba(255, 255, 255, 1)',
-          2: 'rgba(0, 0, 0, .6)'
-        },
-        bkg: 'hsl(var(--color-bkg) / <alpha-value>)',
-        content: 'hsl(var(--color-content) / <alpha-value>)'
+        dark: '#09050f'
       },
       keyframes: {
         spin: {
