@@ -7,6 +7,7 @@ import Footer from '@/components/Footer'
 
 import { NextIntlClientProvider } from 'next-intl'
 import { notFound } from 'next/navigation'
+import Provider from '@/components/ui/Provider'
 
 
 const inter = Archivo({ subsets: ['latin'] })
@@ -34,15 +35,17 @@ export default async function RootLayout({
   }
 
   return (
-    <html lang={locale} className='bg-bkg'>
+    <html lang={locale} className='bg-neutral-200 dark:bg-dark'>
       <body className={`${inter.className}`}>
-        <NextIntlClientProvider locale={locale} messages={messages}>
-          <div className='max-w-[1240px] my-0 mx-auto px-3 '>
-            <Navbar />
-            <div className='flex-grow mt-20'>{children}</div>
-            <Footer />
-          </div>
-        </NextIntlClientProvider>
+        <Provider>
+          <NextIntlClientProvider locale={locale} messages={messages}>
+            <div className='max-w-[1240px] my-0 mx-auto px-3'>
+              <Navbar />
+              <div className='flex-grow mt-20'>{children}</div>
+              <Footer />
+            </div>
+          </NextIntlClientProvider>
+        </Provider>
       </body>
     </html>
   )

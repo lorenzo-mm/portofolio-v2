@@ -26,15 +26,14 @@ const moon = (
 )
 
 export default function BtnDarkMode () {
-  const [isDarkMode, setIsDarkMode] = useState(false)
+  const [DarkMode, setDarkMode] = useState(false)
 
   const handleToggleTheme = () => {
-    setIsDarkMode(!isDarkMode)
-    document.body.classList.toggle('prefers-color-scheme:dark')
+    setDarkMode(!DarkMode)
   }
 
   return (
-    <button className={`rounded-full swap swap-rotate ${isDarkMode && 'swap-active'}`} onClick={handleToggleTheme}>
+    <button className={`rounded-full swap swap-rotate ${DarkMode && 'swap-active'}`} onClick={handleToggleTheme}>
       {sun}
       {moon}
     </button>

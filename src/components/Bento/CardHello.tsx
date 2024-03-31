@@ -16,7 +16,7 @@ export default function CardHello() {
   const t = useTranslations('CardHello')
 
   return (
-    <div className='bg-black bg-cover py-[51px] px-[58px] rounded-[30px_50px] col-[1/9] isolate overflow-hidden relative card-skills'>
+    <div className='bg-neutral-200 dark:bg-dark bg-cover py-[51px] px-[58px] rounded-[30px_50px] col-[1/9] isolate overflow-hidden relative card-skills'>
       <Image 
         src={CardHelloBg} 
         alt='Card hello background' 
@@ -31,8 +31,8 @@ export default function CardHello() {
 
           />
           <div className='card-hello-top-me-text'>
-            <div className='text-xl mb-0.5'>{t('card-hello-top-me-title')}</div>
-            <div className='text-sm opacity-[0.32]'>{t('card-hello-top-me-role')}</div>
+            <div className='text-xl mb-0.5 text-black dark:text-white'>{t('card-hello-top-me-title')}</div>
+            <div className='text-sm text-black dark:text-white opacity-[0.32]'>{t('card-hello-top-me-role')}</div>
           </div>
         </div>
         <div className='flex items-center h-10 w-40'>
@@ -62,8 +62,8 @@ export default function CardHello() {
           </Link>
         </div>
       </div>
-      <div className='text-[56px] mb-[26px] max-w-[600px]'>{t('card-hello-title')}</div>
-      <div className='text-[20px] leading-[34px] max-w-[483px] opacity-60'>{t('card-hello-description')}</div>
+      <div className='text-[56px] mb-[26px] max-w-[600px] text-black dark:text-white'>{t('card-hello-title')}</div>
+      <div className='text-[20px] leading-[34px] max-w-[483px] text-black dark:text-white opacity-60'>{t('card-hello-description')}</div>
     </div>
   )
 }

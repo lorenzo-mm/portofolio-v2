@@ -1,41 +1,44 @@
 'use client'
+import React, { useState } from 'react';
+import { motion } from 'framer-motion';
+import Link from 'next/link'; // Importamos Link de Next.js
 
-import React, { useState } from 'react'
-import { motion } from 'framer-motion'
-import EnglishPage from '../../../messages/en.json'
-import SpanishPage from '../../../messages/es.json'
-import ItalianPage from '../../../messages/it.json'
-import Link from 'next/link'
+import EnglishPage from '../../../messages/en.json';
+import SpanishPage from '../../../messages/es.json';
+import ItalianPage from '../../../messages/it.json';
 
-export default function LanguageButton() {
+interface LanguageContent {
+  [key: string]: string | NestedLanguageContent;
+}
 
-  const [isOpen, setIsOpen] = useState(false)
-  const [language, setLanguage] = useState('english'); // Estado del idioma
+interface NestedLanguageContent {
+  [key: string]: string | NestedLanguageContent;
+}
 
-  // Función para cambiar el idioma
-  const changeLanguage = (newLanguage: string) => {
-    setLanguage(newLanguage)
-  }
+const LanguageButton = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const [language, setLanguage] = useState<'english' | 'spanish' | 'italian'>('english');
 
-  // Renderiza el contenido según el idioma seleccionado
-  let content;
-  switch (language) {
-    case 'english':
-      content = EnglishPage
-      break;
-    case 'spanish':
-      content = SpanishPage
-      break;
-    case 'italian':
-      content = ItalianPage
-      break;
-    default:
-      content = EnglishPage // Por defecto, muestra el contenido en inglés
-  }
-  
+  const changeLanguage = (newLanguage: 'english' | 'spanish' | 'italian') => {
+    setLanguage(newLanguage);
+    setIsOpen(false);
+  };
+
+  const languageContent: { [key: string]: LanguageContent } = {
+    english: EnglishPage,
+    spanish: SpanishPage,
+    italian: ItalianPage,
+  };
+
+  const languagePaths: { [key: string]: string } = {
+    english: '/en',
+    spanish: '/es',
+    italian: '/it',
+  };
+
   return (
-    <div>
-      {/* Renderiza el botón de cambio de idioma y pasa la función para cambiar el idioma */}
+    <div className="language-button-container">
+      {/* Renderiza el botón de cambio de idioma */}
       <motion.button
         className='flex items-center justify-center size-12 rounded-full'
         whileTap={{ scale: 0.97 }}
@@ -50,40 +53,29 @@ export default function LanguageButton() {
       {isOpen && (
         <motion.ul
           className='absolute top-full left-0 rounded-lg mt-1 shadow-md backdrop-blur-sm bg-black/40 card-skills'
-          initial={{ opacity: 0, y: -10 }} // Inicia la lista con opacidad 0 y desplazamiento hacia arriba
-          animate={{ opacity: 1, y: 0 }} // Anima la lista a opacidad 1 y posición original
-          transition={{ duration: 0.3, delay: 0.1 }} // Duración de la animación y retraso
+          initial={{ opacity: 0, y: -10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.3, delay: 0.1 }}
         >
-          {/* Cada elemento <li> animado */}
-          <motion.li
-            className='py-2 px-5 text-sm cursor-pointer'
-            onClick={() => changeLanguage('english')}
-            initial={{ opacity: 0, y: 20 }} // Inicia cada elemento <li> con opacidad 0 y desplazamiento vertical de 20px
-            animate={{ opacity: 1, y: 0 }} // Anima cada elemento <li> a opacidad 1 y posición original
-            transition={{ duration: 0.3, delay: 0.2 }} // Duración de la animación y retraso
-          >
-            English
-          </motion.li>
-          <motion.li
-            className='py-2 px-5 text-sm cursor-pointer'
-            onClick={() => changeLanguage('spanish')}
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.3, delay: 0.3 }}
-          >
-            Español
-          </motion.li>
-          <motion.li
-            className='py-2 px-5 text-sm cursor-pointer'
-            onClick={() => changeLanguage('italian')}
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.3, delay: 0.4 }}
-          >
-            Italiano
-          </motion.li>
+          {/* Mapeo sobre los idiomas */}
+          {Object.keys(languageContent).map((key) => (
+            <motion.li
+              key={key}
+              className='py-2 px-5 text-sm cursor-pointer'
+              onClick={() => changeLanguage(key as 'english' | 'spanish' | 'italian')}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.3, delay: 0.2 }}
+            >
+              <Link href={languagePaths[key]}>
+                <span>{key.charAt(0).toUpperCase() + key.slice(1)}</span>
+              </Link>
+            </motion.li>
+          ))}
         </motion.ul>
       )}
     </div>
   );
 }
+
+export default LanguageButton;
