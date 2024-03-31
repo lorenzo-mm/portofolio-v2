@@ -20,7 +20,7 @@
   "CardHello": {
     "card-hello-top-me-title": "Ciao, sono Lorenzo.",
     "card-hello-top-me-role": "Frontend Developer",
-    "card-hello-title": "Appassionato di perseguire la tecnologia.",
+    "card-hello-title": "Amante della tecnologia.",
     "card-hello-description": "Mi piace imparare cose nuove e provare a superare nuove sfide analizzando come sono migliorato attraverso di esse."
   },
   "experience": {
@@ -60,6 +60,6 @@
     "card-contact-description": "Stabilisci un contatto via e-mail o DM su Twitter."
   },
   "Footer": {
-    "copyright": "© 2024 - Lorenzo Migliorati Muñoz"
+    "copyright": " - Lorenzo Migliorati Muñoz"
   }
 }
