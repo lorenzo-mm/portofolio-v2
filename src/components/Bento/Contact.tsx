@@ -13,7 +13,7 @@ const ContactCard = () => {
   return (
     <div id='contact' className='bg-gradient p-[38px] rounded-[30px_50px_50px_30px] col-[12/13] isolate overflow-hidden relative'>
       <div>
-        <div className='text-[28px] mb-2 text-black dark:text-white'>{t('card-contact-title')}</div>
+        <div className='text-[28px] mb-2 text-primary'>{t('card-contact-title')}</div>
         <div 
           className='text-base leading-[22px] mb-[38px] max-w-[170px] opacity-70'
         >

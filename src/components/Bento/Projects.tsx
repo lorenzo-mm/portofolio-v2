@@ -32,7 +32,7 @@ const CardsWorks = () => {
                   </Link>
                 </div>
               </div>
-              <div className='text-black dark:text-white text-base'>{description[currentLocale]}</div>
+              <div className='text-base'>{description[currentLocale]}</div>
             </div>
           </div>
           <div className="h-full w-full absolute inset-0 card-skills">

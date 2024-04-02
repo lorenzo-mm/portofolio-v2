@@ -1,5 +1,5 @@
 'use client'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
 const sun = (
   <svg
@@ -25,17 +25,24 @@ const moon = (
   </svg>
 )
 
-export default function BtnDarkMode () {
-  const [DarkMode, setDarkMode] = useState(false)
+const BtnDarkMode: React.FC = () => {
+  const [theme, setTheme] = useState<string>(localStorage.getItem('theme') ?? 'mytheme')
 
-  const handleToggleTheme = () => {
-    setDarkMode(!DarkMode)
-  }
+  const handleToggle = () => {
+    setTheme(prevTheme => prevTheme === 'mytheme' ? 'black' : 'mytheme')
+  };
+
+  useEffect(() => {
+    localStorage.setItem('theme', theme)
+    document.querySelector('html')?.setAttribute('data-theme', theme)
+  }, [theme])
 
   return (
-    <button className={`rounded-full swap swap-rotate ${DarkMode && 'swap-active'}`} onClick={handleToggleTheme}>
+    <button className={`rounded-full swap swap-rotate ${theme === 'black' ? 'swap-active' : ''}`} onClick={handleToggle}>
       {sun}
       {moon}
     </button>
-  )
-}
+  );
+};
+
+export default BtnDarkMode

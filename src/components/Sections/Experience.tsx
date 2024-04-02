@@ -33,7 +33,7 @@ const Experience = () => {
   return (
     <section id='experiences' className='flex flex-col mt-28 rounded-xl gap-5 mb-12 pb-8'>
       <header className='flex flex-col gap-3'>
-        <h2 className='text-2xl font-semibold text-black dark:text-white'>{t('title')}</h2>
+        <h2 className='text-2xl font-semibold text-primary'>{t('title')}</h2>
         <p className='font-light text-gray-400'>{t('paragraph')}</p>
       </header>
       <div className='relative mt-8'>
@@ -58,13 +58,13 @@ const Experience = () => {
                     </div>
                   </div>
                 </h3>
-                <div className='absolute left-0 top-0 flex h-4 w-4 -translate-x-1/2 items-center justify-center rounded-full bg-black dark:bg-gray-200'>
+                <div className='absolute left-0 top-0 flex h-4 w-4 -translate-x-1/2 items-center justify-center rounded-full bg-secondary'>
                   <div className='h-2 w-2 rounded-full bg-gray-400'></div>
                 </div>
-                <i className='absolute left-0 top-6 h-[calc(100%-2px)] w-0.5 -translate-x-1/2 bg-black dark:bg-gray-200'></i>
+                <i className='absolute left-0 top-6 h-[calc(100%-2px)] w-0.5 -translate-x-1/2 bg-secondary'></i>
               </aside>
               <main className='ml-0 spacing-1 print:!ml-12 md:ml-24 xl:ml-14 2xl:ml-12'>
-                <span className='text-3xl font-bold text-black dark:text-white '>{experience.experience}</span>
+                <span className='text-3xl font-bold text-primary'>{experience.experience}</span>
                 <div className='purple_gradient font-bold text-xl'>
                   <span>{experience.company}</span>
                   <span className='ml-2'>• {experience.typeExperience}</span>
