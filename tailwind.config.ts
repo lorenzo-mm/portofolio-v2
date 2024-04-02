@@ -1,7 +1,6 @@
 import type { Config } from 'tailwindcss'
 
 const config: Config = {
-  darkMode:"class",
   content: [
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
@@ -9,9 +8,6 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      colors: {
-        dark: '#09050f'
-      },
       keyframes: {
         spin: {
           '0%': { transform: 'translate(-50%, -50%) rotate(0)' }, /* Configuración inicial de la rotación */
@@ -47,5 +43,24 @@ const config: Config = {
   plugins: [
     require('daisyui')
   ],
+  daisyui: {
+    themes: [
+      {
+        mytheme: {
+          "primary": "#09050f",
+          "secondary": "#09050f",
+          "accent": "#37cdbe",
+          "base-100": "#E5E5E5",
+        },
+        black: {
+          "primary": "#E5E5E5",
+          "secondary": "#E5E5E5",
+          "accent": "#37cdbe",
+          "base-100": "#09050f",
+        }
+      },
+    ],
+  }
 }
+
 export default config
