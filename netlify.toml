@@ -1,10 +1,10 @@
-build:
-  base: /opt/build/repo
-  command: next build
+[build]
+  command = "next build"
   commandOrigin: config
   publish: /opt/build/repo/out
   publishOrigin: config
 
-plugins:
+[[plugins]]
   origin: config
-  package: "@netlify/plugin-nextjs"
+  package = "@netlify/plugin-nextjs"
+
