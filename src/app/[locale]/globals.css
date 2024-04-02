@@ -134,8 +134,20 @@ body {
 
 .card-skills-tree {
   height: 386px;
-  -webkit-mask-image: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #fff 17.39%, #fff 85.24%, rgba(255, 255, 255, 0) 100%);
-  mask-image: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #fff 17.39%, #fff 85.24%, rgba(255, 255, 255, 0) 100%);
+  -webkit-mask-image: 
+    linear-gradient(
+      180deg, 
+  rgba(255, 255, 255, 0) 0%,
+  #fff 17.39%, 
+  #fff 85.24%, 
+  rgba(255, 255, 255, 0) 100%);
+  mask-image: 
+    linear-gradient(
+      180deg,
+  rgba(255, 255, 255, 0) 0%, 
+  #fff 17.39%, 
+  #fff 85.24%, 
+  rgba(255, 255, 255, 0) 100%);
   overflow: hidden;
   position: absolute;
   right: -100px;
@@ -145,25 +157,30 @@ body {
 .card-skills-tree-row:nth-child(1) {
   transition-duration: 3s;
   top: calc(25px * 1);
+  margin-right: calc(20px * 1);
 }
 .card-skills-tree-row:nth-child(2) {
   transition-duration: 2s;
   top: calc(-286 * 1);
+  margin-right: calc(20px * 1);
 }
 
 .card-skills-tree-row:nth-child(3) {
   transition-duration: 1s;
-  top: calc(596px + 25px)* -1* 1;
+  top: calc(596px + 25px) * -1 * 1;
+  margin-right: calc(20px * 1);
 }
 
 .card-skills-tree-row:nth-child(4) {
   transition-duration: 2s;
-  top: calc(-1017px* 1);
+  top: calc(-1017px * 1);
+  margin-right: calc(20px * 1);
 }
 
 .card-skills-tree-row:nth-child(5) {
   transition-duration: 3s;
   top: calc(-1439px * 1);
+  margin-right: calc(20px * 1);
 }
 
 .lazy-image {
@@ -189,3 +206,4 @@ body {
   position: absolute;
 }
 /* ⬆ END STYLES CARDHELLO & CONTACT ⬆ */
+
