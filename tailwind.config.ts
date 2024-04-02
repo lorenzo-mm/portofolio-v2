@@ -23,14 +23,14 @@ const config: Config = {
       }  
       },
       animation: {
-        'spin-slow': 'spin 100s linear infinite',
-        'floating-animation': 'floatingAnimation 8s ease infinite',
-        'circle-animation': 'circleAnimation 6s infinite'
+        'spin-slow': 'spin 100s linear infinite', /* Cardhello */
+        'floating-animation': 'floatingAnimation 8s ease infinite', /* Contact */
+        'circle-animation': 'circleAnimation 6s infinite' /* Cardhello right */
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-        'gradient': 'linear-gradient(311.97deg, #689F38 0%, #1B5E20 100%)'
+        'gradient': 'linear-gradient(311.97deg, #689F38 0%, #1B5E20 100%)' /* Contact */
       },
       maskImage: {
         'gradient-mask': 'linear-gradient(180deg,rgba(255, 255, 255, 0) 0%, #fff 17.39%, #fff 85.24%,rgba(255, 255, 255, 0) 100%)'
@@ -53,7 +53,7 @@ const config: Config = {
           "base-100": "#E5E5E5",
         },
         black: {
-          "primary": "#E5E5E5",
+          "primary": "#FFFFFF",
           "secondary": "#E5E5E5",
           "accent": "#37cdbe",
           "base-100": "#09050f",
