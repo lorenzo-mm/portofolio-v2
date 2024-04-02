@@ -1,9 +1,9 @@
 [build]
   command = "next build"
   publish = "out"
-  publishOrigin = config
+  publishOrigin = "config"
 
 [[plugins]]
-  origin = config
+  origin = "config"
   package = "@netlify/plugin-nextjs"
 
