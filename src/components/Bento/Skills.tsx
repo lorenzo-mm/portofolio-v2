@@ -25,43 +25,43 @@ const SkillsCard = () => {
         <div className='flex rotate-[15deg]'>
           <Image
             id='0'
-            height='1'
-            width='1'
+            height='72'
+            width='72'
             src={skills_tree}
             alt='Card Skills Tree Row'
-            className='card-skills-bg lazy-image'
+            className='lazy-image card-skills-tree-row'
           />
           <Image
             id='1'
-            height='1'
-            width='1'
+            height='72'
+            width='72'
             src={skills_tree}
             alt='Card Skills Tree Row'
-            className='card-skills-bg lazy-image'
+            className='lazy-image card-skills-tree-row'
           />
           <Image 
             id='2'
-            height='1'
-            width='1'
+            height='72'
+            width='72'
             src={skills_tree}
             alt='Card Skills Tree Row'
-            className='card-skills-bg lazy-image'
+            className='lazy-image card-skills-tree-row'
           />
           <Image
             id='3'
-            height='1'
-            width='1'
+            height='72'
+            width='72'
             src={skills_tree}
             alt='Card Skills Tree Row'
-            className='card-skills-bg lazy-image'
+            className='lazy-image card-skills-tree-row'
           />
           <Image
             id='4'
-            height='1'
-            width='1'
+            height='72'
+            width='72'
             src={skills_tree}
             alt='Card Skills Tree Row'
-            className='card-skills-bg lazy-image'
+            className='lazy-image card-skills-tree-row'
           />
         </div>
       </div>
