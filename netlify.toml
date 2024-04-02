@@ -1,6 +1,5 @@
 [build]
   command = "next build"
-  commandOrigin: config
   publish: /opt/build/repo/out
   publishOrigin: config
 
