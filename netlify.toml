@@ -1,5 +1,5 @@
 [build]
-  command = "build"
+  command = "next build"
   publish = "out"
 
 [[plugins]]
