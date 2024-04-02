@@ -5,7 +5,7 @@
   },
   "navbar": {
     "present": {
-      "title": "Present",
+      "title": "Sobre mi",
       "route": "/"
     },
     "skills": {
@@ -48,7 +48,8 @@
     },
     "4": {
       "description": "Calcula tu edad."
-    }
+    },
+    "button": "Más Proyectos"
   },
   "Skills": {
     "card-skills-subtitle": "Intento mejorar constantemente",

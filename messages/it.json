@@ -48,7 +48,8 @@
     },
     "4": {
       "description": "Calcola la tua età."
-    }
+    },
+    "button": "Atri Progetti"
   },
   "Skills": {
     "card-skills-subtitle": "Cerco costantemente di migliorarmi",

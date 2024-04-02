@@ -10,7 +10,7 @@
       "route": "/"
     },
     "skills": {
-      "title": "Skills",
+      "title": "Projects",
       "route": "#skills"
     },
     "contact": {
@@ -49,7 +49,8 @@
     },
     "4": {
       "description": "Calculate your age."
-    }
+    },
+    "button": "More Projects"
   },
   "Skills": {
     "card-skills-subtitle": "I constantly try to improve myself",
