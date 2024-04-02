@@ -1,6 +1,6 @@
 [build]
   command = "next build"
-  publish: /opt/build/repo/out
+  publish: "out"
   publishOrigin: config
 
 [[plugins]]
