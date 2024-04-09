@@ -1,5 +1,5 @@
 [build]
-  publish = "build"
+  publish = "/opt/build/repo/build"
   command = "npm run build"
   publishOrigin = "config"
 
