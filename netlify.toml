@@ -1,7 +1,7 @@
 [build]
   command = "npm run build"
   commandOrigin= "config"
-  publish = "out"
+  publish = ".next"
   publishOrigin = "config"
 
 [[plugins]]
