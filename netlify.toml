@@ -1,5 +1,5 @@
 [build]
-  command = "run build"
+  command = "next build"
   publish = "out"
   publishOrigin = "config"
 
