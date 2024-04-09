@@ -3,7 +3,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 import Twitter from '@/../../public/logo-x.gif'
-import Pc from '@/../../public/Pc.webp'
+import Pc from '@/../../public/pc.webp'
 
 import { useTranslations } from 'next-intl'
 

@@ -10,11 +10,6 @@ import Burger from '@/../../public/burger1.png'
 import Admin from '@/../../public/admin1.png'
 import Mapfre from '@/../../public/mapfre.png'
 import AgeCalculator from '@/../../public/agecalculator.png'
-import Apple from '@/../../public/apple1.png'
-import Spacex from '@/../../public/spacex.png'
-import Calculadora from '@/../../public/calculadora.png'
-import Todolist from '@/../../public/todolist.png'
-import Pptss from '@/../../public/pptss.png'
 
 
 type Description = {
