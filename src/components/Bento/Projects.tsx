@@ -8,6 +8,10 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 
+interface Description {
+  [key: string]: string;
+}
+
 const CardsWorks = () => {
   const t = useTranslations('projects')
   const locale = useLocale() // Accedemos al idioma actual directamente
@@ -35,7 +39,7 @@ const CardsWorks = () => {
                     </Link>
                   </div>
                 </div>
-                <div className='text-base'>{description[currentLocale]}</div>
+                <div className='text-base'>{(description as Description)[currentLocale]}</div>
               </div>
             </div>
             <div className='h-full w-full absolute inset-0 card-skills'>

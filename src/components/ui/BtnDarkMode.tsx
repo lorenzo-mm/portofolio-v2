@@ -26,15 +26,23 @@ const moon = (
 )
 
 const BtnDarkMode: React.FC = () => {
-  const [theme, setTheme] = useState<string>(localStorage.getItem('theme') ?? 'mytheme')
+  const [theme, setTheme] = useState<string>(() => {
+    if (typeof window !== 'undefined') {
+      return localStorage.getItem('theme') ?? 'mytheme';
+    } else {
+      return 'mytheme'
+    }
+  })
 
   const handleToggle = () => {
-    setTheme(prevTheme => prevTheme === 'mytheme' ? 'black' : 'mytheme')
-  };
+    setTheme(prevTheme => prevTheme === 'mytheme' ? 'black' : 'mytheme');
+  }
 
   useEffect(() => {
-    localStorage.setItem('theme', theme)
-    document.querySelector('html')?.setAttribute('data-theme', theme)
+    if (typeof window !== 'undefined') {
+      localStorage.setItem('theme', theme);
+      document.querySelector('html')?.setAttribute('data-theme', theme);
+    }
   }, [theme])
 
   return (
@@ -42,7 +50,7 @@ const BtnDarkMode: React.FC = () => {
       {sun}
       {moon}
     </button>
-  );
-};
+  )
+}
 
 export default BtnDarkMode
