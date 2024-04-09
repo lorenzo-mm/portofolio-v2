@@ -1,6 +1,7 @@
 [build]
-  publish = "out"
   command = "npm run build"
+  commandOrigin= "config"
+  publish = "out"
   publishOrigin = "config"
 
 [[plugins]]
