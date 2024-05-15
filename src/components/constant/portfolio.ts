@@ -9,7 +9,7 @@ import it from '../../../messages/it.json'
 import Burger from '@/../../public/burger1.png'
 import Admin from '@/../../public/admin1.png'
 import Mapfre from '@/../../public/mapfre.webp'
-import AgeCalculator from '@/../../public/agecalculator.webp'
+import Weatherapp from '@/../../public/weatherapp.png'
 
 
 type Description = {
@@ -63,13 +63,13 @@ export const Data: PortfolioItem[] = [
   },
   {
     id: 4,
-    image: AgeCalculator,
-    title: 'Age Calculator',
+    image: Weatherapp,
+    title: 'Weather App',
     description: {
       en: en.projects['4'].description, 
       es: es.projects['4'].description, 
       it: it.projects['4'].description,
     },
-    github: 'https://github.com/lorenzo-mm/age-calculator-main',
+    github: 'https://github.com/lorenzo-mm/weather-app-master',
   }
 ]
