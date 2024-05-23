@@ -9,7 +9,7 @@ import it from '../../../messages/it.json'
 import Burger from '@/../../public/burger1.png'
 import Admin from '@/../../public/admin1.png'
 import Mapfre from '@/../../public/mapfre.webp'
-import Weatherapp from '@/../../public/weatherapp.png'
+import Weather from '@/../../public/weather.png'
 
 
 type Description = {
@@ -63,7 +63,7 @@ export const Data: PortfolioItem[] = [
   },
   {
     id: 4,
-    image: Weatherapp,
+    image: Weather,
     title: 'Weather App',
     description: {
       en: en.projects['4'].description, 
