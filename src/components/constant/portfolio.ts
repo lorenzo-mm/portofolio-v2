@@ -9,7 +9,7 @@ import it from '../../../messages/it.json'
 import Burger from '@/../../public/burger1.png'
 import Admin from '@/../../public/admin1.png'
 import Mapfre from '@/../../public/mapfre.webp'
-import Weatherapp from '@/../../public/weatherapp.png'
+import Weatherapp from '../../../public/weatherapp.png'
 
 
 type Description = {
