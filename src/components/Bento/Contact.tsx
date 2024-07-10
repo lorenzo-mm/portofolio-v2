@@ -36,7 +36,7 @@ const ContactCard = () => {
             aria-label='DM me on twitter' 
             className='flex items-center justify-center h-[70px] w-[70px] transition-[0.45s] duration-[cubic-bezier(.6,0.6,0,1)] ease-[background-transparent] first:border-b-[rgba(255,255,255,0.15)] first:border-b first:border-solid'
           >
-            <Image src={Twitter} alt='Twitter' width='28' height='28' />
+            <Image src={Twitter} alt='Twitter' width='28' height='28' unoptimized />
           </Link>
         </div>
       </div>

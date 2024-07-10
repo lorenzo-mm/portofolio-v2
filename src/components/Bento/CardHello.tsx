@@ -42,7 +42,7 @@ export default function CardHello() {
             aria-label='Follow me on Twitter'
             className='flex items-center justify-center relative mr-3 w-12 h-12 bg-black/20 text-white rounded-md border border-solid border-[rgba(255,255,255,0.1)]'
           >
-            <Image src={Twitter} alt='Logo X' width='25' height='20' />
+            <Image src={Twitter} alt='Logo X' width='25' height='20' unoptimized />
           </Link>
           <Link 
             href='https://www.linkedin.com/in/lorenzo-mmuñoz/' 
