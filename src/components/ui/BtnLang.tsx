@@ -1,40 +1,40 @@
 'use client'
-import React, { useState } from 'react';
-import { motion } from 'framer-motion';
-import Link from 'next/link'; // Importamos Link de Next.js
+import React, { useState } from 'react'
+import { motion } from 'framer-motion'
+import Link from 'next/link'
 
-import EnglishPage from '../../../messages/en.json';
-import SpanishPage from '../../../messages/es.json';
-import ItalianPage from '../../../messages/it.json';
+import EnglishPage from '../../../messages/en.json'
+import SpanishPage from '../../../messages/es.json'
+import ItalianPage from '../../../messages/it.json'
 
 interface LanguageContent {
-  [key: string]: string | NestedLanguageContent;
+  [key: string]: string | NestedLanguageContent
 }
 
 interface NestedLanguageContent {
-  [key: string]: string | NestedLanguageContent;
+  [key: string]: string | NestedLanguageContent
 }
 
 const LanguageButton = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [language, setLanguage] = useState<'english' | 'spanish' | 'italian'>('english');
+  const [language, setLanguage] = useState<'english' | 'spanish' | 'italian'>('english')
 
   const changeLanguage = (newLanguage: 'english' | 'spanish' | 'italian') => {
-    setLanguage(newLanguage);
-    setIsOpen(false);
-  };
+    setLanguage(newLanguage)
+    setIsOpen(false)
+  }
 
   const languageContent: { [key: string]: LanguageContent } = {
     english: EnglishPage,
     spanish: SpanishPage,
     italian: ItalianPage,
-  };
+  }
 
   const languagePaths: { [key: string]: string } = {
     english: '/en',
     spanish: '/es',
     italian: '/it',
-  };
+  }
 
   return (
     <div className="language-button-container">
@@ -75,7 +75,7 @@ const LanguageButton = () => {
         </motion.ul>
       )}
     </div>
-  );
+  )
 }
 
-export default LanguageButton;
+export default LanguageButton
